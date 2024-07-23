@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.react_bkg {
+  width: 1000px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  padding: 5%;
+  /* hacer que ocupe el 100% del viewport */
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  background-color: lightgoldenrodyellow;
+}
+
+.contenedor-secundario {
+  position: relative;
+  z-index: 2;
+  opacity: 0.95;
+}
+
+/* Contenedor del título de la página */
+.title {
+  margin: 2% 0 2% 0;
+  text-align: center;
+}
+
+/* Contenedor del formulario de la página */
+.contenedor-form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  padding: 20px 0;
+}
+
+.contenedor-form .contenedor-opcion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.contenedor-form .contenedor-opcion div {
+  margin: 10px;
+  display: flex;
+}
+
+.contenedor-form-editar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  padding: 20px 0;
+}
+
+.genero-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 5px;
+  border: 1px solid transparent;
+  width: 250px;
+}
+
+.contenedor-form label {
+  margin-right: 10px;
+}
+
+.contenedor-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-style: monospace;
+  font-size: 15px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.contenedor-form input[type="number"] {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-style: monospace;
+  font-size: 15px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.contenedor-form select {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-style: monospace;
+  font-size: 15px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.contenedor-form input[type="radio"] {
+  margin: 0 10px 0 10px;
+  accent-color: black;
+}
+
+.contenedor-form button {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: lightgreen;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.contenedor-filtro {
+  margin-top: 30px;
+}
+.contenedor-filtro button {
+  padding: 10px;
+  background-color: lightcoral;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.quitar-filtro {
+  all: unset;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Contenedor de la tabla de resultados */
+.contenedor-resultados {
+  margin-top: 20px;
+  background-color: lightgreen;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+}
+
+/* Tabla de resultados */
+.contenedor-resultados table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+/* Cabeza de la tabla */
+.contenedor-resultados thead th {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Cuerpo de la tabla */
+.contenedor-resultados tbody td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.boton {
+  padding: 5px;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 75%;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: lightskyblue;
+}
+
+.footer_botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.footer_boton_cancelar {
+  padding: 5px;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 75%;
+  transition: background-color 0.3s;
+  background-color: lightgreen;
+}
+
+.footer_boton_eliminar {
+  padding: 5px;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 75%;
+  transition: background-color 0.3s;
+  background-color: lightcoral;
+}
